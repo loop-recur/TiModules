@@ -1,0 +1,17 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 0.1
+description: Zeroconf for android
+author: LoopRecur
+license: Specify your license
+copyright: Copyright (c) 2011 by Your Company
+
+
+# these should not be edited
+name: jmdns
+moduleid: com.looprecur.jmdns
+guid: 2c456e06-67ca-45d8-9fa6-6befaaff5e30
+platform: android
+minsdk: 1.6.2

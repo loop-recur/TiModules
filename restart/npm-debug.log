@@ -1,0 +1,786 @@
+info it worked if it ends with ok
+verbose cli [ 'node',
+verbose cli   '/opt/local/bin/npm',
+verbose cli   'install',
+verbose cli   'mysql-libmysqlclient' ]
+info using npm@1.0.103
+info using node@v0.4.12
+verbose config file /Users/brian/.npmrc
+verbose config file /opt/local/etc/npmrc
+verbose config file /opt/local/lib/node_modules/npm/npmrc
+verbose into /Users/brian/Sites/sandbox/restart [ 'mysql-libmysqlclient' ]
+verbose cache add mysql-libmysqlclient
+verbose cache add [ 'mysql-libmysqlclient', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'mysql-libmysqlclient',
+silly cache add: name, spec, args   [ 'mysql-libmysqlclient', null ] ]
+verbose parsed url { pathname: 'mysql-libmysqlclient',
+verbose parsed url   href: 'mysql-libmysqlclient' }
+info addNamed [ 'mysql-libmysqlclient', '' ]
+verbose addNamed [ null, '' ]
+verbose GET mysql-libmysqlclient
+verbose raw, before any munging mysql-libmysqlclient
+verbose url resolving [ 'https://registry.npmjs.org/',
+verbose url resolving   './mysql-libmysqlclient' ]
+verbose url resolved https://registry.npmjs.org/mysql-libmysqlclient
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.1.0 (Erlang OTP/R14B04)',
+silly get cb     etag: '"74ONPCRR9C0IVB10WHM96O2AQ"',
+silly get cb     date: 'Fri, 18 Nov 2011 17:18:38 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '20761' } ]
+verbose mkdir (expected) error ENOENT, No such file or directory '/Users/brian/.npm/mysql-libmysqlclient'
+verbose mkdir done: /Users/brian/.npm/mysql-libmysqlclient 755
+verbose GET mysql-libmysqlclient/1.2.7
+verbose raw, before any munging mysql-libmysqlclient/1.2.7
+verbose url resolving [ 'https://registry.npmjs.org/',
+verbose url resolving   './mysql-libmysqlclient/1.2.7' ]
+verbose url resolved https://registry.npmjs.org/mysql-libmysqlclient/1.2.7
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.1.0 (Erlang OTP/R14B04)',
+silly get cb     etag: '"74ONPCRR9C0IVB10WHM96O2AQ"',
+silly get cb     date: 'Fri, 18 Nov 2011 17:18:39 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '1790' } ]
+verbose mkdir (expected) error ENOENT, No such file or directory '/Users/brian/.npm/mysql-libmysqlclient/1.2.7'
+verbose mkdir done: /Users/brian/.npm/mysql-libmysqlclient/1.2.7 755
+verbose bin dist [ '0.4-ares1.7.4-ev4.4-openssl1.0.0d-v83.1.8.26-darwin-11.2.0',
+verbose bin dist   { shasum: 'f5eeea34cbbb504840f579e7f1cd957981af461b',
+verbose bin dist     tarball: 'http://registry.npmjs.org/mysql-libmysqlclient/-/mysql-libmysqlclient-1.2.7.tgz' } ]
+verbose addRemoteTarball [ 'https://registry.npmjs.org/mysql-libmysqlclient/-/mysql-libmysqlclient-1.2.7.tgz',
+verbose addRemoteTarball   'f5eeea34cbbb504840f579e7f1cd957981af461b' ]
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484'
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508'
+verbose mkdir done: /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508 755
+info fetch https://registry.npmjs.org/mysql-libmysqlclient/-/mysql-libmysqlclient-1.2.7.tgz
+verbose fetch to /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/tmp.tgz
+silly updated sha bytes 40960
+silly updated sha bytes 32476
+info shasum f5eeea34cbbb504840f579e7f1cd957981af461b
+info shasum /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/tmp.tgz
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents'
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm'
+verbose mkdir done: /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly spawning [ '/usr/bin/bsdtar',
+silly spawning   [ '-zmvxpf',
+silly spawning     '/var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/tmp.tgz' ],
+silly spawning   '/var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm' ]
+silly tar err x package/.npmignore
+silly tar err x package/conf-stamp
+silly tar err x package/LICENSE
+silly tar err x package/wscript
+silly tar err x package/.gitignore
+silly tar err x package/build-stamp
+silly tar err x package/devdependencies-stamp
+silly tar err x package/README.markdown
+silly tar err x package/CHANGELOG.markdown
+silly tar err x package/mysql-libmysqlclient.js
+silly tar err x package/package.json
+silly tar err x package/Makefile
+silly tar err x package/gh_pages.sh
+silly tar err x package/.idea/node-mysql-libmysqlclient.iml
+silly tar err x package/.idea/misc.xml
+silly tar err x package/.idea/modules.xml
+silly tar err x package/.idea/.name
+silly tar err x package/.idea/vcs.xml
+silly tar err x package/.idea/workspace.xml
+silly tar err x package/.idea/encodings.xml
+silly tar err x package/src/mysql_bindings_connection.h
+silly tar err x package/src/mysql_bindings_connection.cc
+silly tar err x package/src/mysql_bindings.cc
+silly tar err x package/src/mysql_bindings_statement.cc
+silly tar err x package/src/mysql_bindings_statement.h
+silly tar err x package/src/mysql_bindings.h
+silly tar err x package/src/mysql_bindings_result.cc
+silly tar err x package/src/mysql_bindings_result.h
+silly tar err x package/src/mysql_bindings_statement.cc~
+silly tar err x package/src/mysql_bindings_statement.h~
+silly tar err x package/tools/run-memoryleaks-finder.js
+silly tar err x package/tools/run-check-tests.js
+silly tar err x package/tools/run-debug.js
+silly tar err x package/tests/config.js
+silly tar err x package/tests/ignored/place_ignored_tests.here
+silly tar err x package/tests/slow/test-nested-query.js
+silly tar err x package/tests/slow/test-nested-connect.js
+silly tar err x package/tests/slow/test-nested-fetchAll.js
+silly tar err x package/tests/complex/test-binary-buffers.js
+silly tar err x package/tests/complex/setup-complex.js
+silly tar err x package/tests/complex/test-fetchAll.js
+silly tar err x package/tests/complex/test-connect-different-args.js
+silly tar err x package/tests/complex/test-javascript-interface.js
+silly tar err x package/tests/complex/test-datatypes-cast.js
+silly tar err x package/tests/complex/test-call-stored-procedure.js
+silly tar err x package/tests/simple/setup-simple.js~
+silly tar err x package/tests/simple/test-class-mysqlresult.js
+silly tar err x package/tests/simple/setup-simple.js
+silly tar err x package/tests/simple/test-class-mysqlstatement.js
+silly tar err x package/tests/simple/test-class-mysqlstatement.js~
+silly tar err x package/tests/simple/test-class-mysqlconnection-async.js
+silly tar err x package/tests/simple/test-class-mysqlconnection.js
+silly tar err x package/tests/simple/test-class-mysqlresult-async.js
+silly tar err x package/doc/examples.html
+silly tar err x package/doc/examples.js
+silly tar err x package/doc/api.html
+silly tar err x package/doc/index.html
+silly tar err x package/doc/example_http.js
+silly tar err x package/doc/changelog.html
+silly tar err x package/doc/examples/url_shortener/index.js
+silly tar err x package/doc/examples/url_shortener/index.html
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/.gitignore
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/.npmignore
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/build-stamp
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/CHANGELOG.markdown
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/conf-stamp
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/devdependencies-stamp
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/gh_pages.sh
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/LICENSE
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/Makefile
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/mysql-libmysqlclient.js
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/package.json
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/README.markdown
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/wscript
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/.idea
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/.idea/.name
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/.idea/encodings.xml
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/.idea/misc.xml
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/.idea/modules.xml
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/.idea/node-mysql-libmysqlclient.iml
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/.idea/vcs.xml
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/.idea/workspace.xml
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/src
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/src/mysql_bindings.cc
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/src/mysql_bindings.h
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/src/mysql_bindings_connection.cc
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/src/mysql_bindings_connection.h
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/src/mysql_bindings_result.cc
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/src/mysql_bindings_result.h
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/src/mysql_bindings_statement.cc
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/src/mysql_bindings_statement.cc~
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/src/mysql_bindings_statement.h
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/src/mysql_bindings_statement.h~
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tools
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tools/run-check-tests.js
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tools/run-debug.js
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tools/run-memoryleaks-finder.js
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tests
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tests/config.js
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tests/complex
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tests/complex/setup-complex.js
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tests/complex/test-binary-buffers.js
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tests/complex/test-call-stored-procedure.js
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tests/complex/test-connect-different-args.js
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tests/complex/test-datatypes-cast.js
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tests/complex/test-fetchAll.js
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tests/complex/test-javascript-interface.js
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tests/ignored
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tests/ignored/place_ignored_tests.here
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tests/simple
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tests/simple/setup-simple.js
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tests/simple/setup-simple.js~
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tests/simple/test-class-mysqlconnection-async.js
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tests/simple/test-class-mysqlconnection.js
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tests/simple/test-class-mysqlresult-async.js
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tests/simple/test-class-mysqlresult.js
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tests/simple/test-class-mysqlstatement.js
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tests/simple/test-class-mysqlstatement.js~
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tests/slow
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tests/slow/test-nested-connect.js
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tests/slow/test-nested-fetchAll.js
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/tests/slow/test-nested-query.js
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/doc
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/doc/api.html
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/doc/changelog.html
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/doc/example_http.js
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/doc/examples.html
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/doc/examples.js
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/doc/index.html
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/doc/examples
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/doc/examples/url_shortener
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/doc/examples/url_shortener/index.html
+silly asyncMap in gTP /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package/doc/examples/url_shortener/index.js
+verbose gunzed /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package
+verbose rm'ed /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/package
+verbose renamed [ '/var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/___package.npm/package',
+verbose renamed   '/var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/package' ]
+verbose has wscript [ undefined,
+verbose has wscript   { file: '/var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/package/package.json',
+verbose has wscript     contributors: false,
+verbose has wscript     serverjs: false,
+verbose has wscript     wscript: true } ]
+silly testEngine { name: 'mysql-libmysqlclient',
+silly testEngine   description: 'Binary MySQL bindings for Node.JS',
+silly testEngine   keywords: [ 'mysql', 'libmysqlclient', 'sql', 'database', 'addon' ],
+silly testEngine   homepage: 'http://sannis.github.com/node-mysql-libmysqlclient',
+silly testEngine   version: '1.2.7',
+silly testEngine   author: { name: 'Oleg Efimov', email: 'efimovov@gmail.com' },
+silly testEngine   contributors: 
+silly testEngine    [ { name: 'Oleg Efimov', email: 'efimovov@gmail.com' },
+silly testEngine      { name: 'Surendra Singhi',
+silly testEngine        email: 'ssinghi@kreeti.com' },
+silly testEngine      { name: 'Akzhan Abdulin',
+silly testEngine        email: 'akzhan.abdulin@gmail.com' },
+silly testEngine      { name: 'Robin Duckett',
+silly testEngine        email: 'robin.duckett@gmail.com' },
+silly testEngine      { name: 'Dan Beam', email: 'dan@danbeam.org' },
+silly testEngine      { name: 'Maurits Lamers',
+silly testEngine        email: 'maurits@weidestraat.nl' },
+silly testEngine      { name: 'Benjmain Reesman',
+silly testEngine        email: 'ben.reesman@gmail.com' },
+silly testEngine      { name: 'Pavel Ponomarenko',
+silly testEngine        email: 'shocksilien@gmail.com' },
+silly testEngine      { name: 'Krists Krīgers', email: 'kristsk@cdi.lv' },
+silly testEngine      { name: 'Roman Shtylman',
+silly testEngine        email: 'shtylman@gmail.com' },
+silly testEngine      { name: 'Sergey Novgorodsky',
+silly testEngine        email: 'svnovgorodsky@hotmail.com' } ],
+silly testEngine   bugs: { url: 'http://github.com/Sannis/node-mysql-libmysqlclient/issues' },
+silly testEngine   licenses: [ { type: 'MIT' } ],
+silly testEngine   repositories: 
+silly testEngine    [ { type: 'git',
+silly testEngine        url: 'http://github.com/Sannis/node-mysql-libmysqlclient.git' } ],
+silly testEngine   main: './mysql-libmysqlclient',
+silly testEngine   scripts: 
+silly testEngine    { install: 'make conf all',
+silly testEngine      test: 'make test',
+silly testEngine      doc: 'make doc' },
+silly testEngine   engines: { node: '0.4.x || 0.5.x || 0.6.x' },
+silly testEngine   devDependencies: { nodeunit: '*', nodelint: '*', 'node-inspector': '*' },
+silly testEngine   _npmUser: { name: 'undefined', email: undefined },
+silly testEngine   _id: 'mysql-libmysqlclient@1.2.7',
+silly testEngine   dependencies: {},
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.103',
+silly testEngine   _nodeVersion: 'v0.4.12',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   path: '/var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/package' }
+verbose caching /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/package/package.json
+verbose loadDefaults mysql-libmysqlclient@1.2.7
+verbose tarball contents [ 'package' ]
+verbose from cache /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/package/package.json
+verbose pack /var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents/package /Users/brian/.npm/mysql-libmysqlclient/1.2.7/package.tgz
+verbose mkdir'ed /Users/brian/.npm/mysql-libmysqlclient/1.2.7
+verbose tar about to write tar and gzip it.
+silly tar args [ '-czvf', '-', '-T', '-' ]
+silly spawning [ '/usr/bin/bsdtar',
+silly spawning   [ '-czvf', '-', '-T', '-' ],
+silly spawning   '/var/folders/1m/5qrsln2s4kdf2nqmfd4dxd8r0000gn/T/npm-1321636721484/1321636721484-0.8400812929030508/contents' ]
+verbose mkdir (expected) error ENOENT, No such file or directory '/Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm'
+verbose mkdir done: /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /Users/brian/.npm/mysql-libmysqlclient/1.2.7/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly spawning [ '/usr/bin/bsdtar',
+silly spawning   [ '-zmvxpf',
+silly spawning     '/Users/brian/.npm/mysql-libmysqlclient/1.2.7/package.tgz' ],
+silly spawning   '/Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm' ]
+silly tar err x package/.gitignore
+silly tar err x package/.npmignore
+silly tar err x package/build-stamp
+silly tar err x package/CHANGELOG.markdown
+silly tar err x package/conf-stamp
+silly tar err x package/devdependencies-stamp
+silly tar err x package/gh_pages.sh
+silly tar err x package/LICENSE
+silly tar err x package/Makefile
+silly tar err x package/mysql-libmysqlclient.js
+silly tar err x package/package.json
+silly tar err x package/README.markdown
+silly tar err x package/wscript
+silly tar err x package/.idea/.name
+silly tar err x package/.idea/encodings.xml
+silly tar err x package/.idea/misc.xml
+silly tar err x package/.idea/modules.xml
+silly tar err x package/.idea/node-mysql-libmysqlclient.iml
+silly tar err x package/.idea/vcs.xml
+silly tar err x package/.idea/workspace.xml
+silly tar err x package/src/mysql_bindings.cc
+silly tar err x package/src/mysql_bindings.h
+silly tar err x package/src/mysql_bindings_connection.cc
+silly tar err x package/src/mysql_bindings_connection.h
+silly tar err x package/src/mysql_bindings_result.cc
+silly tar err x package/src/mysql_bindings_result.h
+silly tar err x package/src/mysql_bindings_statement.cc
+silly tar err x package/src/mysql_bindings_statement.cc~
+silly tar err x package/src/mysql_bindings_statement.h
+silly tar err x package/src/mysql_bindings_statement.h~
+silly tar err x package/tools/run-check-tests.js
+silly tar err x package/tools/run-debug.js
+silly tar err x package/tools/run-memoryleaks-finder.js
+silly tar err x package/tests/config.js
+silly tar err x package/tests/complex/setup-complex.js
+silly tar err x package/tests/complex/test-binary-buffers.js
+silly tar err x package/tests/complex/test-call-stored-procedure.js
+silly tar err x package/tests/complex/test-connect-different-args.js
+silly tar err x package/tests/complex/test-datatypes-cast.js
+silly tar err x package/tests/complex/test-fetchAll.js
+silly tar err x package/tests/complex/test-javascript-interface.js
+silly tar err x package/tests/ignored/place_ignored_tests.here
+silly tar err x package/tests/simple/setup-simple.js
+silly tar err x package/tests/simple/setup-simple.js~
+silly tar err x package/tests/simple/test-class-mysqlconnection-async.js
+silly tar err x package/tests/simple/test-class-mysqlconnection.js
+silly tar err x package/tests/simple/test-class-mysqlresult-async.js
+silly tar err x package/tests/simple/test-class-mysqlresult.js
+silly tar err x package/tests/simple/test-class-mysqlstatement.js
+silly tar err x package/tests/simple/test-class-mysqlstatement.js~
+silly tar err x package/tests/slow/test-nested-connect.js
+silly tar err x package/tests/slow/test-nested-fetchAll.js
+silly tar err x package/tests/slow/test-nested-query.js
+silly tar err x package/doc/api.html
+silly tar err x package/doc/changelog.html
+silly tar err x package/doc/example_http.js
+silly tar err x package/doc/examples.html
+silly tar err x package/doc/examples.js
+silly tar err x package/doc/index.html
+silly tar err x package/doc/examples/url_shortener/index.html
+silly tar err x package/doc/examples/url_shortener/index.js
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/.gitignore
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/.npmignore
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/build-stamp
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/CHANGELOG.markdown
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/conf-stamp
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/devdependencies-stamp
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/gh_pages.sh
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/LICENSE
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/Makefile
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/mysql-libmysqlclient.js
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/package.json
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/README.markdown
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/wscript
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/.idea
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/.idea/.name
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/.idea/encodings.xml
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/.idea/misc.xml
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/.idea/modules.xml
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/.idea/node-mysql-libmysqlclient.iml
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/.idea/vcs.xml
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/.idea/workspace.xml
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/src
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/src/mysql_bindings.cc
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/src/mysql_bindings.h
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/src/mysql_bindings_connection.cc
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/src/mysql_bindings_connection.h
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/src/mysql_bindings_result.cc
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/src/mysql_bindings_result.h
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/src/mysql_bindings_statement.cc
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/src/mysql_bindings_statement.cc~
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/src/mysql_bindings_statement.h
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/src/mysql_bindings_statement.h~
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tools
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tools/run-check-tests.js
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tools/run-debug.js
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tools/run-memoryleaks-finder.js
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tests
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tests/config.js
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tests/complex
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tests/complex/setup-complex.js
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tests/complex/test-binary-buffers.js
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tests/complex/test-call-stored-procedure.js
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tests/complex/test-connect-different-args.js
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tests/complex/test-datatypes-cast.js
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tests/complex/test-fetchAll.js
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tests/complex/test-javascript-interface.js
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tests/ignored
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tests/ignored/place_ignored_tests.here
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tests/simple
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tests/simple/setup-simple.js
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tests/simple/setup-simple.js~
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tests/simple/test-class-mysqlconnection-async.js
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tests/simple/test-class-mysqlconnection.js
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tests/simple/test-class-mysqlresult-async.js
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tests/simple/test-class-mysqlresult.js
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tests/simple/test-class-mysqlstatement.js
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tests/simple/test-class-mysqlstatement.js~
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tests/slow
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tests/slow/test-nested-connect.js
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tests/slow/test-nested-fetchAll.js
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/tests/slow/test-nested-query.js
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/doc
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/doc/api.html
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/doc/changelog.html
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/doc/example_http.js
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/doc/examples.html
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/doc/examples.js
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/doc/index.html
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/doc/examples
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/doc/examples/url_shortener
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/doc/examples/url_shortener/index.html
+silly asyncMap in gTP /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package/doc/examples/url_shortener/index.js
+verbose gunzed /Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package
+verbose rm'ed /Users/brian/.npm/mysql-libmysqlclient/1.2.7/package
+verbose renamed [ '/Users/brian/.npm/mysql-libmysqlclient/1.2.7/___package.npm/package',
+verbose renamed   '/Users/brian/.npm/mysql-libmysqlclient/1.2.7/package' ]
+verbose has wscript [ undefined,
+verbose has wscript   { file: '/Users/brian/.npm/mysql-libmysqlclient/1.2.7/package/package.json',
+verbose has wscript     serverjs: false,
+verbose has wscript     contributors: false,
+verbose has wscript     wscript: true } ]
+silly testEngine { name: 'mysql-libmysqlclient',
+silly testEngine   description: 'Binary MySQL bindings for Node.JS',
+silly testEngine   keywords: [ 'mysql', 'libmysqlclient', 'sql', 'database', 'addon' ],
+silly testEngine   homepage: 'http://sannis.github.com/node-mysql-libmysqlclient',
+silly testEngine   version: '1.2.7',
+silly testEngine   author: { name: 'Oleg Efimov', email: 'efimovov@gmail.com' },
+silly testEngine   contributors: 
+silly testEngine    [ { name: 'Oleg Efimov', email: 'efimovov@gmail.com' },
+silly testEngine      { name: 'Surendra Singhi',
+silly testEngine        email: 'ssinghi@kreeti.com' },
+silly testEngine      { name: 'Akzhan Abdulin',
+silly testEngine        email: 'akzhan.abdulin@gmail.com' },
+silly testEngine      { name: 'Robin Duckett',
+silly testEngine        email: 'robin.duckett@gmail.com' },
+silly testEngine      { name: 'Dan Beam', email: 'dan@danbeam.org' },
+silly testEngine      { name: 'Maurits Lamers',
+silly testEngine        email: 'maurits@weidestraat.nl' },
+silly testEngine      { name: 'Benjmain Reesman',
+silly testEngine        email: 'ben.reesman@gmail.com' },
+silly testEngine      { name: 'Pavel Ponomarenko',
+silly testEngine        email: 'shocksilien@gmail.com' },
+silly testEngine      { name: 'Krists Krīgers', email: 'kristsk@cdi.lv' },
+silly testEngine      { name: 'Roman Shtylman',
+silly testEngine        email: 'shtylman@gmail.com' },
+silly testEngine      { name: 'Sergey Novgorodsky',
+silly testEngine        email: 'svnovgorodsky@hotmail.com' } ],
+silly testEngine   bugs: { url: 'http://github.com/Sannis/node-mysql-libmysqlclient/issues' },
+silly testEngine   licenses: [ { type: 'MIT' } ],
+silly testEngine   repositories: 
+silly testEngine    [ { type: 'git',
+silly testEngine        url: 'http://github.com/Sannis/node-mysql-libmysqlclient.git' } ],
+silly testEngine   main: './mysql-libmysqlclient',
+silly testEngine   scripts: 
+silly testEngine    { install: 'make conf all',
+silly testEngine      test: 'make test',
+silly testEngine      doc: 'make doc' },
+silly testEngine   engines: { node: '0.4.x || 0.5.x || 0.6.x' },
+silly testEngine   devDependencies: { nodeunit: '*', nodelint: '*', 'node-inspector': '*' },
+silly testEngine   _npmUser: { name: 'undefined', email: undefined },
+silly testEngine   _id: 'mysql-libmysqlclient@1.2.7',
+silly testEngine   dependencies: {},
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.103',
+silly testEngine   _nodeVersion: 'v0.4.12',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   dist: { shasum: '43ea867bb548747ab8919812214fce5314d6efc9' } }
+verbose caching /Users/brian/.npm/mysql-libmysqlclient/1.2.7/package/package.json
+verbose loadDefaults mysql-libmysqlclient@1.2.7
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+info shasum 43ea867bb548747ab8919812214fce5314d6efc9
+info shasum /Users/brian/.npm/mysql-libmysqlclient/1.2.7/package.tgz
+verbose from cache /Users/brian/.npm/mysql-libmysqlclient/1.2.7/package/package.json
+verbose chmod /Users/brian/.npm/mysql-libmysqlclient/1.2.7/package.tgz 644
+verbose chown [ '/Users/brian/.npm/mysql-libmysqlclient/1.2.7/package.tgz',
+verbose chown   501,
+verbose chown   20 ]
+silly resolved [ { name: 'mysql-libmysqlclient',
+silly resolved     description: 'Binary MySQL bindings for Node.JS',
+silly resolved     keywords: [ 'mysql', 'libmysqlclient', 'sql', 'database', 'addon' ],
+silly resolved     homepage: 'http://sannis.github.com/node-mysql-libmysqlclient',
+silly resolved     version: '1.2.7',
+silly resolved     author: { name: 'Oleg Efimov', email: 'efimovov@gmail.com' },
+silly resolved     contributors: 
+silly resolved      [ { name: 'Oleg Efimov', email: 'efimovov@gmail.com' },
+silly resolved        { name: 'Surendra Singhi',
+silly resolved          email: 'ssinghi@kreeti.com' },
+silly resolved        { name: 'Akzhan Abdulin',
+silly resolved          email: 'akzhan.abdulin@gmail.com' },
+silly resolved        { name: 'Robin Duckett',
+silly resolved          email: 'robin.duckett@gmail.com' },
+silly resolved        { name: 'Dan Beam', email: 'dan@danbeam.org' },
+silly resolved        { name: 'Maurits Lamers',
+silly resolved          email: 'maurits@weidestraat.nl' },
+silly resolved        { name: 'Benjmain Reesman',
+silly resolved          email: 'ben.reesman@gmail.com' },
+silly resolved        { name: 'Pavel Ponomarenko',
+silly resolved          email: 'shocksilien@gmail.com' },
+silly resolved        { name: 'Krists Krīgers', email: 'kristsk@cdi.lv' },
+silly resolved        { name: 'Roman Shtylman',
+silly resolved          email: 'shtylman@gmail.com' },
+silly resolved        { name: 'Sergey Novgorodsky',
+silly resolved          email: 'svnovgorodsky@hotmail.com' } ],
+silly resolved     bugs: { url: 'http://github.com/Sannis/node-mysql-libmysqlclient/issues' },
+silly resolved     licenses: [ { type: 'MIT' } ],
+silly resolved     repositories: 
+silly resolved      [ { type: 'git',
+silly resolved          url: 'http://github.com/Sannis/node-mysql-libmysqlclient.git' } ],
+silly resolved     main: './mysql-libmysqlclient',
+silly resolved     scripts: 
+silly resolved      { install: 'make conf all',
+silly resolved        test: 'make test',
+silly resolved        doc: 'make doc' },
+silly resolved     engines: { node: '0.4.x || 0.5.x || 0.6.x' },
+silly resolved     devDependencies: { nodeunit: '*', nodelint: '*', 'node-inspector': '*' },
+silly resolved     _npmUser: { name: 'undefined', email: undefined },
+silly resolved     _id: 'mysql-libmysqlclient@1.2.7',
+silly resolved     dependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.0.103',
+silly resolved     _nodeVersion: 'v0.4.12',
+silly resolved     _defaultsLoaded: true,
+silly resolved     dist: { shasum: '43ea867bb548747ab8919812214fce5314d6efc9' } } ]
+info into /Users/brian/Sites/sandbox/restart mysql-libmysqlclient@1.2.7
+info installOne mysql-libmysqlclient@1.2.7
+info unbuild /Users/brian/Sites/sandbox/restart/node_modules/mysql-libmysqlclient
+verbose from cache /Users/brian/.npm/mysql-libmysqlclient/1.2.7/package/package.json
+verbose mkdir (expected) error ENOENT, No such file or directory '/Users/brian/Sites/sandbox/restart/node_modules'
+verbose mkdir (expected) error ENOENT, No such file or directory '/Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm'
+verbose mkdir done: /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /Users/brian/Sites/sandbox/restart/node_modules/mysql-libmysqlclient
+silly gunzTarPerm modes [ '755', '644' ]
+silly spawning [ '/usr/bin/bsdtar',
+silly spawning   [ '-zmvxpf',
+silly spawning     '/Users/brian/.npm/mysql-libmysqlclient/1.2.7/package.tgz' ],
+silly spawning   '/Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm' ]
+silly tar err x package/.gitignore
+silly tar err x package/.npmignore
+silly tar err x package/build-stamp
+silly tar err x package/CHANGELOG.markdown
+silly tar err x package/conf-stamp
+silly tar err x package/devdependencies-stamp
+silly tar err x package/gh_pages.sh
+silly tar err x package/LICENSE
+silly tar err x package/Makefile
+silly tar err x package/mysql-libmysqlclient.js
+silly tar err x package/package.json
+silly tar err x package/README.markdown
+silly tar err x package/wscript
+silly tar err x package/.idea/.name
+silly tar err x package/.idea/encodings.xml
+silly tar err x package/.idea/misc.xml
+silly tar err x package/.idea/modules.xml
+silly tar err x package/.idea/node-mysql-libmysqlclient.iml
+silly tar err x package/.idea/vcs.xml
+silly tar err x package/.idea/workspace.xml
+silly tar err x package/src/mysql_bindings.cc
+silly tar err x package/src/mysql_bindings.h
+silly tar err x package/src/mysql_bindings_connection.cc
+silly tar err x package/src/mysql_bindings_connection.h
+silly tar err x package/src/mysql_bindings_result.cc
+silly tar err x package/src/mysql_bindings_result.h
+silly tar err x package/src/mysql_bindings_statement.cc
+silly tar err x package/src/mysql_bindings_statement.cc~
+silly tar err x package/src/mysql_bindings_statement.h
+silly tar err x package/src/mysql_bindings_statement.h~
+silly tar err x package/tools/run-check-tests.js
+silly tar err x package/tools/run-debug.js
+silly tar err x package/tools/run-memoryleaks-finder.js
+silly tar err x package/tests/config.js
+silly tar err x package/tests/complex/setup-complex.js
+silly tar err x package/tests/complex/test-binary-buffers.js
+silly tar err x package/tests/complex/test-call-stored-procedure.js
+silly tar err x package/tests/complex/test-connect-different-args.js
+silly tar err x package/tests/complex/test-datatypes-cast.js
+silly tar err x package/tests/complex/test-fetchAll.js
+silly tar err x package/tests/complex/test-javascript-interface.js
+silly tar err x package/tests/ignored/place_ignored_tests.here
+silly tar err x package/tests/simple/setup-simple.js
+silly tar err x package/tests/simple/setup-simple.js~
+silly tar err x package/tests/simple/test-class-mysqlconnection-async.js
+silly tar err x package/tests/simple/test-class-mysqlconnection.js
+silly tar err x package/tests/simple/test-class-mysqlresult-async.js
+silly tar err x package/tests/simple/test-class-mysqlresult.js
+silly tar err x package/tests/simple/test-class-mysqlstatement.js
+silly tar err x package/tests/simple/test-class-mysqlstatement.js~
+silly tar err x package/tests/slow/test-nested-connect.js
+silly tar err x package/tests/slow/test-nested-fetchAll.js
+silly tar err x package/tests/slow/test-nested-query.js
+silly tar err x package/doc/api.html
+silly tar err x package/doc/changelog.html
+silly tar err x package/doc/example_http.js
+silly tar err x package/doc/examples.html
+silly tar err x package/doc/examples.js
+silly tar err x package/doc/index.html
+silly tar err x package/doc/examples/url_shortener/index.html
+silly tar err x package/doc/examples/url_shortener/index.js
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/.gitignore
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/.npmignore
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/build-stamp
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/CHANGELOG.markdown
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/conf-stamp
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/devdependencies-stamp
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/gh_pages.sh
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/LICENSE
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/Makefile
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/mysql-libmysqlclient.js
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/package.json
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/README.markdown
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/wscript
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/.idea
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/.idea/.name
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/.idea/encodings.xml
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/.idea/misc.xml
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/.idea/modules.xml
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/.idea/node-mysql-libmysqlclient.iml
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/.idea/vcs.xml
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/.idea/workspace.xml
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/src
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/src/mysql_bindings.cc
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/src/mysql_bindings.h
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/src/mysql_bindings_connection.cc
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/src/mysql_bindings_connection.h
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/src/mysql_bindings_result.cc
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/src/mysql_bindings_result.h
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/src/mysql_bindings_statement.cc
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/src/mysql_bindings_statement.cc~
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/src/mysql_bindings_statement.h
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/src/mysql_bindings_statement.h~
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tools
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tools/run-check-tests.js
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tools/run-debug.js
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tools/run-memoryleaks-finder.js
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tests
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tests/config.js
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tests/complex
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tests/complex/test-binary-buffers.js
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tests/complex/setup-complex.js
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tests/complex/test-call-stored-procedure.js
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tests/complex/test-connect-different-args.js
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tests/complex/test-datatypes-cast.js
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tests/complex/test-fetchAll.js
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tests/complex/test-javascript-interface.js
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tests/ignored
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tests/ignored/place_ignored_tests.here
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tests/simple
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tests/simple/setup-simple.js
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tests/simple/setup-simple.js~
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tests/simple/test-class-mysqlconnection-async.js
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tests/simple/test-class-mysqlconnection.js
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tests/simple/test-class-mysqlresult-async.js
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tests/simple/test-class-mysqlresult.js
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tests/simple/test-class-mysqlstatement.js
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tests/simple/test-class-mysqlstatement.js~
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tests/slow
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tests/slow/test-nested-connect.js
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tests/slow/test-nested-fetchAll.js
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/tests/slow/test-nested-query.js
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/doc
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/doc/api.html
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/doc/changelog.html
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/doc/example_http.js
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/doc/examples.html
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/doc/examples.js
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/doc/index.html
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/doc/examples
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/doc/examples/url_shortener
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/doc/examples/url_shortener/index.html
+silly asyncMap in gTP /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package/doc/examples/url_shortener/index.js
+verbose gunzed /Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package
+verbose rm'ed /Users/brian/Sites/sandbox/restart/node_modules/mysql-libmysqlclient
+verbose renamed [ '/Users/brian/Sites/sandbox/restart/node_modules/___mysql-libmysqlclient.npm/package',
+verbose renamed   '/Users/brian/Sites/sandbox/restart/node_modules/mysql-libmysqlclient' ]
+verbose has wscript [ undefined,
+verbose has wscript   { file: '/Users/brian/Sites/sandbox/restart/node_modules/mysql-libmysqlclient/package.json',
+verbose has wscript     contributors: false,
+verbose has wscript     serverjs: false,
+verbose has wscript     wscript: true } ]
+silly testEngine { name: 'mysql-libmysqlclient',
+silly testEngine   description: 'Binary MySQL bindings for Node.JS',
+silly testEngine   keywords: [ 'mysql', 'libmysqlclient', 'sql', 'database', 'addon' ],
+silly testEngine   homepage: 'http://sannis.github.com/node-mysql-libmysqlclient',
+silly testEngine   version: '1.2.7',
+silly testEngine   author: { name: 'Oleg Efimov', email: 'efimovov@gmail.com' },
+silly testEngine   contributors: 
+silly testEngine    [ { name: 'Oleg Efimov', email: 'efimovov@gmail.com' },
+silly testEngine      { name: 'Surendra Singhi',
+silly testEngine        email: 'ssinghi@kreeti.com' },
+silly testEngine      { name: 'Akzhan Abdulin',
+silly testEngine        email: 'akzhan.abdulin@gmail.com' },
+silly testEngine      { name: 'Robin Duckett',
+silly testEngine        email: 'robin.duckett@gmail.com' },
+silly testEngine      { name: 'Dan Beam', email: 'dan@danbeam.org' },
+silly testEngine      { name: 'Maurits Lamers',
+silly testEngine        email: 'maurits@weidestraat.nl' },
+silly testEngine      { name: 'Benjmain Reesman',
+silly testEngine        email: 'ben.reesman@gmail.com' },
+silly testEngine      { name: 'Pavel Ponomarenko',
+silly testEngine        email: 'shocksilien@gmail.com' },
+silly testEngine      { name: 'Krists Krīgers', email: 'kristsk@cdi.lv' },
+silly testEngine      { name: 'Roman Shtylman',
+silly testEngine        email: 'shtylman@gmail.com' },
+silly testEngine      { name: 'Sergey Novgorodsky',
+silly testEngine        email: 'svnovgorodsky@hotmail.com' } ],
+silly testEngine   bugs: { url: 'http://github.com/Sannis/node-mysql-libmysqlclient/issues' },
+silly testEngine   licenses: [ { type: 'MIT' } ],
+silly testEngine   repositories: 
+silly testEngine    [ { type: 'git',
+silly testEngine        url: 'http://github.com/Sannis/node-mysql-libmysqlclient.git' } ],
+silly testEngine   main: './mysql-libmysqlclient',
+silly testEngine   scripts: 
+silly testEngine    { install: 'make conf all',
+silly testEngine      test: 'make test',
+silly testEngine      doc: 'make doc' },
+silly testEngine   engines: { node: '0.4.x || 0.5.x || 0.6.x' },
+silly testEngine   devDependencies: { nodeunit: '*', nodelint: '*', 'node-inspector': '*' },
+silly testEngine   _npmUser: { name: 'undefined', email: undefined },
+silly testEngine   _id: 'mysql-libmysqlclient@1.2.7',
+silly testEngine   dependencies: {},
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.103',
+silly testEngine   _nodeVersion: 'v0.4.12',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /Users/brian/Sites/sandbox/restart/node_modules/mysql-libmysqlclient/package.json
+verbose loadDefaults mysql-libmysqlclient@1.2.7
+info preinstall mysql-libmysqlclient@1.2.7
+verbose from cache /Users/brian/Sites/sandbox/restart/node_modules/mysql-libmysqlclient/package.json
+verbose into /Users/brian/Sites/sandbox/restart/node_modules/mysql-libmysqlclient []
+silly resolved []
+verbose about to build /Users/brian/Sites/sandbox/restart/node_modules/mysql-libmysqlclient
+info build /Users/brian/Sites/sandbox/restart/node_modules/mysql-libmysqlclient
+verbose from cache /Users/brian/Sites/sandbox/restart/node_modules/mysql-libmysqlclient/package.json
+verbose linkStuff [ false,
+verbose linkStuff   false,
+verbose linkStuff   false,
+verbose linkStuff   '/Users/brian/Sites/sandbox/restart/node_modules' ]
+info linkStuff mysql-libmysqlclient@1.2.7
+verbose linkBins mysql-libmysqlclient@1.2.7
+verbose linkMans mysql-libmysqlclient@1.2.7
+verbose rebuildBundles mysql-libmysqlclient@1.2.7
+info install mysql-libmysqlclient@1.2.7
+verbose unsafe-perm in lifecycle true
+silly exec sh "-c" "make conf all"
+silly spawning [ 'sh',
+silly spawning   [ '-c', 'make conf all' ],
+silly spawning   '/Users/brian/Sites/sandbox/restart/node_modules/mysql-libmysqlclient' ]
+info mysql-libmysqlclient@1.2.7 Failed to exec install script
+ERR! error installing mysql-libmysqlclient@1.2.7 Error: mysql-libmysqlclient@1.2.7 install: `make conf all`
+ERR! error installing mysql-libmysqlclient@1.2.7 `sh "-c" "make conf all"` failed with 2
+ERR! error installing mysql-libmysqlclient@1.2.7     at ChildProcess.<anonymous> (/opt/local/lib/node_modules/npm/lib/utils/exec.js:49:20)
+ERR! error installing mysql-libmysqlclient@1.2.7     at ChildProcess.emit (events.js:67:17)
+ERR! error installing mysql-libmysqlclient@1.2.7     at ChildProcess.onexit (child_process.js:192:12)
+info unbuild /Users/brian/Sites/sandbox/restart/node_modules/mysql-libmysqlclient
+verbose from cache /Users/brian/Sites/sandbox/restart/node_modules/mysql-libmysqlclient/package.json
+info preuninstall mysql-libmysqlclient@1.2.7
+info uninstall mysql-libmysqlclient@1.2.7
+verbose unbuild mysql-libmysqlclient@1.2.7 [ true,
+verbose unbuild mysql-libmysqlclient@1.2.7   '/Users/brian/Sites/sandbox/restart/node_modules',
+verbose unbuild mysql-libmysqlclient@1.2.7   '/Users/brian/Sites/sandbox/restart/node_modules' ]
+info postuninstall mysql-libmysqlclient@1.2.7
+verbose installOne cb mysql-libmysqlclient@1.2.7
+ERR! mysql-libmysqlclient@1.2.7 install: `make conf all`
+ERR! `sh "-c" "make conf all"` failed with 2
+ERR! 
+ERR! Failed at the mysql-libmysqlclient@1.2.7 install script.
+ERR! This is most likely a problem with the mysql-libmysqlclient package,
+ERR! not with npm itself.
+ERR! Tell the author that this fails on your system:
+ERR!     make conf all
+ERR! You can get their info via:
+ERR!     npm owner ls mysql-libmysqlclient
+ERR! There is likely additional logging output above.
+ERR! 
+ERR! System Darwin 11.2.0
+ERR! command "node" "/opt/local/bin/npm" "install" "mysql-libmysqlclient"
+ERR! cwd /Users/brian/Sites/sandbox/restart
+ERR! node -v v0.4.12
+ERR! npm -v 1.0.103
+ERR! code ELIFECYCLE
+verbose exit [ 1, true ]

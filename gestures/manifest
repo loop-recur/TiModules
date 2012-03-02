@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 0.1
+apiversion: 2
+description: My module
+author: Your Name
+license: Specify your license
+copyright: Copyright (c) 2011 by Your Company
+
+
+# these should not be edited
+name: gestures
+moduleid: com.looprecur.gestures
+guid: b7f397fa-f4d8-4db3-b7fb-085591ac6d6d
+platform: android
+minsdk: 1.8.0.1

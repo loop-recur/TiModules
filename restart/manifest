@@ -1,0 +1,17 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 0.1
+description: Restarts on command
+author: Brian Lonsdorf
+license: Specify your license
+copyright: Copyright (c) 2011 by Loop/Recur
+
+
+# these should not be edited
+name: restart
+moduleid: com.looprecur.restart
+guid: e37fd5d6-369c-4cf4-934c-215f1ebfd974
+platform: android
+minsdk: 1.6.2

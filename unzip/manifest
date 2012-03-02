@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 0.1
+description: My module
+author: Your Name
+apiversion: 2
+license: Specify your license
+copyright: Copyright (c) 2011 by Your Company
+
+
+# these should not be edited
+name: unzip
+moduleid: com.looprecur.unzip
+guid: 7b501928-ea27-4ecc-9579-fcc03c7fd708
+platform: android
+minsdk: 1.8.0.1
