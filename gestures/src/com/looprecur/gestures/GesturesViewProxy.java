@@ -27,12 +27,6 @@ public class GesturesViewProxy extends TiViewProxy
 	public GesturesViewProxy() {
 		super();
 	}
-	
-	// Handle creation options
-	@Override
-	public void handleCreationDict(HashMap options) {
-		super.handleCreationDict(options);
-	}
 
 	@Override
 	public TiUIView createView(Activity activity) {

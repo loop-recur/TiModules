@@ -57,11 +57,11 @@ public class GesturesView extends View {
 						this.proxy = proxy;
 		    }
 		
-				private Object getDictFromMotion(MotionEvent e) {
-						Object obj = new Object();
-						obj.x = e.getX();
-						obj.y = e.getY();
-						return obj;
+				private KrollDict getDictFromMotion(MotionEvent e) {
+						KrollDict dict = new KrollDict();
+						dict.put("x", e.getX());
+						dict.put("y", e.getY());
+						return dict;
 				}
 				
 				private void putDictFromMotion(String key, MotionEvent e, KrollDict dict) {

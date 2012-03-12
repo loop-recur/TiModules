@@ -13,23 +13,23 @@ window.add(label);
 window.open();
 
 // TODO: write your module tests here
-var package_manager = require('com.looprecur.package_manager');
+var package_manager = require('com.looprecur.packagemanager');
 
 Ti.API.info("module is => " + package_manager);
 
 label.text = "GETTING LAUNCH INTENT";
-package_manager.launch('com.android.email');
+package_manager.launch('com.looprecur.unzip');
 
 label.text = "STARTING";
 
 Ti.API.info("------================");
 
-// intent.addCategory(Ti.Android.CATEGORY_LAUNCHER);
+intent.addCategory(Ti.Android.CATEGORY_LAUNCHER);
 
-// var activity = Ti.Android.currentActivity;
-// 
-// label.text = "Launching";
-// 
-// activity.startActivity(intent);
+var activity = Ti.Android.currentActivity;
+
+label.text = "Launching";
+
+activity.startActivity(intent);
 
 label.text = "Launched";

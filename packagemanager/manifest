@@ -11,8 +11,8 @@ copyright: Copyright (c) 2011 by Your Company
 
 
 # these should not be edited
-name: package_manager
-moduleid: com.looprecur.package_manager
+name: packagemanager
+moduleid: com.looprecur.packagemanager
 guid: b8fbf987-1ee4-4734-9f1f-530d47a38efd
 platform: android
 minsdk: 1.8.0.1

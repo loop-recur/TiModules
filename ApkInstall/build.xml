@@ -1,6 +1,6 @@
-<project name="ApkInstall" default="dist">
+<project name="Apkinstall" default="dist">
 	<description>
-		Ant build script for Titanium Android module ApkInstall
+		Ant build script for Titanium Android module Apkinstall
 	</description>
 
 	<property name="ti.module.root" location="${basedir}"/>

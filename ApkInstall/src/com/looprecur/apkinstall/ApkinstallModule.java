@@ -11,6 +11,8 @@ package com.looprecur.apk_install;
 import org.appcelerator.kroll.KrollModule;
 import org.appcelerator.kroll.annotations.Kroll;
 
+import org.appcelerator.titanium.TiApplication;
+
 import org.appcelerator.titanium.util.Log;
 import org.appcelerator.titanium.util.TiConfig;
 
@@ -19,7 +21,7 @@ import java.io.File;
 import android.net.Uri;
 import android.app.Activity;
 
-@Kroll.module(name="Apkinstall", id="com.looprecur.apk_install")
+@Kroll.module(name="Apkinstall", id="com.looprecur.apkinstall")
 public class ApkinstallModule extends KrollModule
 {
 

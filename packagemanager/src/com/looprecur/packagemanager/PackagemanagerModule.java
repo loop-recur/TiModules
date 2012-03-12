@@ -6,7 +6,7 @@
  * Please see the LICENSE included with this distribution for details.
  *
  */
-package com.looprecur.package_manager;
+package com.looprecur.packagemanager;
 
 import org.appcelerator.kroll.KrollModule;
 import org.appcelerator.kroll.KrollInvocation;
@@ -23,18 +23,18 @@ import android.app.Activity;
 import android.content.Intent;
 
 
-@Kroll.module(name="PackageManager", id="com.looprecur.package_manager")
-public class PackageManagerModule extends KrollModule
+@Kroll.module(name="Packagemanager", id="com.looprecur.packagemanager")
+public class PackagemanagerModule extends KrollModule
 {
 
 	// Standard Debugging variables
-	private static final String LCAT = "PackageManagerModule";
+	private static final String LCAT = "PackagemanagerModule";
 	private static final boolean DBG = TiConfig.LOGD;
 
 	// You can define constants with @Kroll.constant, for example:
 	// @Kroll.constant public static final String EXTERNAL_NAME = value;
 	
-	public PackageManagerModule() {
+	public PackagemanagerModule() {
 		super();
 	}
 

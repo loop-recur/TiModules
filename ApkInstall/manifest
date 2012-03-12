@@ -12,7 +12,7 @@ copyright: Copyright (c) 2012 by Your Company
 
 # these should not be edited
 name: apkinstall
-moduleid: com.looprecur.apk_install
+moduleid: com.looprecur.apkinstall
 guid: 7ba03061-6997-4b2e-9fe2-8aad22d455df
 platform: android
 minsdk: 1.8.0.1

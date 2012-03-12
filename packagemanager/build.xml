@@ -1,4 +1,4 @@
-<project name="package_manager" default="dist">
+<project name="packagemanager" default="dist">
 	<description>
 		Ant build script for Titanium Android module package_manager
 	</description>

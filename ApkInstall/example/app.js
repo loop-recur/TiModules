@@ -11,7 +11,7 @@ var label = Ti.UI.createLabel();
 window.add(label);
 window.open();
 
-var apkinstall = require('com.looprecur.apk_install');
+var apkinstall = require('com.looprecur.apkinstall');
 
 var xhr = Titanium.Network.createHTTPClient();
 

@@ -9,6 +9,7 @@
 package com.looprecur.gestures;
 
 import org.appcelerator.kroll.KrollModule;
+import org.appcelerator.kroll.annotations.Kroll;
 
 import org.appcelerator.titanium.util.Log;
 import org.appcelerator.titanium.util.TiConfig;
