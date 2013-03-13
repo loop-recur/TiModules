@@ -46,20 +46,12 @@ public class VinkeyboardAndroidModule extends KrollModule
 		Log.d(LCAT, "example called");
 		return "hello world";
 	}
-	
-	// Properties
-	@Kroll.getProperty
-	public String getExampleProp()
-	{
-		Log.d(LCAT, "get example property");
-		return "hello world";
-	}
-	
-	
-	@Kroll.setProperty
-	public void setExampleProp(String value) {
-		Log.d(LCAT, "set example property: " + value);
-	}
+
+  @Kroll.method
+  public void show()
+  {
+    Log.d(LCAT, "..opening the vin keyboard");
+  }
 
 }
 

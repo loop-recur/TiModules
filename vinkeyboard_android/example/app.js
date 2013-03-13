@@ -4,36 +4,25 @@
 // to users on how to use it by example.
 
 
-// open a single window
-var win = Ti.UI.createWindow({
-	backgroundColor:'white'
-});
-var label = Ti.UI.createLabel();
-win.add(label);
+// View
+var win, view, vin;
+
+win = Ti.UI.createWindow({ backgroundColor:'white'});
+view = Ti.UI.createView({ layout: 'vertical', width: Ti.UI.SIZE, height: Ti.UI.SIZE });
+vin = Ti.UI.createTextField({ top: 10, width: 250, hintText: 'Enter VIN'});
+
+view.add(vin);
+win.add(view);
 win.open();
 
-// TODO: write your module tests here
-var vinkeyboard_android = require('com.looprecur.vinkeyboard.android');
-Ti.API.info("module is => " + vinkeyboard_android);
+// Controller
+var kb = require('com.looprecur.vinkeyboard.android')
 
-label.text = vinkeyboard_android.example();
+//+ showVinKeyboard :: Event -> Action(UI)
+  , showVinKeyboard = function() {
+      kb.show();
+    }
+  ;
 
-Ti.API.info("module exampleProp is => " + vinkeyboard_android.exampleProp);
-vinkeyboard_android.exampleProp = "This is a test value";
-
-if (Ti.Platform.name == "android") {
-	var proxy = vinkeyboard_android.createExample({
-		message: "Creating an example Proxy",
-		backgroundColor: "red",
-		width: 100,
-		height: 100,
-		top: 100,
-		left: 150
-	});
-
-	proxy.printMessage("Hello world!");
-	proxy.message = "Hi world!.  It's me again.";
-	proxy.printMessage("Hello world!");
-	win.add(proxy);
-}
-
+Ti.API.info("module is => " + kb);
+vin.addEventListener('click', showVinKeyboard);
