@@ -15,6 +15,13 @@ import org.appcelerator.titanium.TiApplication;
 import org.appcelerator.kroll.common.Log;
 import org.appcelerator.kroll.common.TiConfig;
 
+import android.content.Context;
+import android.inputmethodservice.Keyboard;
+import android.inputmethodservice.KeyboardView;
+import android.app.Activity;
+import android.app.Service;
+import android.content.Intent;
+
 
 @Kroll.module(name="VinkeyboardAndroid", id="com.looprecur.vinkeyboard.android")
 public class VinkeyboardAndroidModule extends KrollModule
@@ -23,6 +30,7 @@ public class VinkeyboardAndroidModule extends KrollModule
 	// Standard Debugging variables
 	private static final String LCAT = "VinkeyboardAndroidModule";
 	private static final boolean DBG = TiConfig.LOGD;
+  private static Context appContext;
 
 	// You can define constants with @Kroll.constant, for example:
 	// @Kroll.constant public static final String EXTERNAL_NAME = value;
@@ -36,7 +44,7 @@ public class VinkeyboardAndroidModule extends KrollModule
 	public static void onAppCreate(TiApplication app)
 	{
 		Log.d(LCAT, "inside onAppCreate");
-		// put module init code that needs to run when the application is created
+    appContext = (Context) app;
 	}
 
 	// Methods
@@ -51,6 +59,8 @@ public class VinkeyboardAndroidModule extends KrollModule
   public void show()
   {
     Log.d(LCAT, "..opening the vin keyboard");
+    Activity appActivity = getActivity();
+    appContext.startService(new Intent(appActivity, SoftKeyboard.class));
   }
 
 }
