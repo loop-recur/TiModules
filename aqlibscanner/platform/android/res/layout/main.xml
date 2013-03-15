@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent" android:layout_height="fill_parent"
+        >
+
+    <SurfaceView android:id="@android:id/primary"
+                 android:layout_width="fill_parent" android:layout_height="fill_parent"
+                 android:layout_centerInParent="true" />
+
+    <FrameLayout android:layout_width="fill_parent"
+                 android:layout_height="fill_parent" >
+
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="fill_parent" android:orientation="vertical">
+            <FrameLayout android:layout_width="fill_parent"
+                         android:layout_height="fill_parent"
+                         android:background="#80000000" android:layout_weight="1">
+                <Button android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginLeft="12dp"
+                        android:id="@+id/button_torch"
+                        android:visibility="invisible"
+                        android:text="ON" />
+                <ImageView
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right" android:layout_marginRight="12dp"
+                        android:src="@drawable/autoniq" />
+
+            </FrameLayout>
+            <com.autoniq.vinscanner.ViewFinder android:id="@android:id/custom"
+                                               android:layout_width="fill_parent" android:layout_height="fill_parent"
+                                               android:layout_weight="1" />
+            <LinearLayout android:layout_width="fill_parent"
+                          android:layout_height="fill_parent" android:orientation="horizontal"
+                          android:background="#80000000" android:layout_weight="1">
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>
